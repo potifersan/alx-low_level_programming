@@ -1,22 +1,23 @@
 #include <stdio.h>
-
-/*
+/**
  *  main - Entry point
  *
- *  Random: Always 0 (Success)
+ *  Return: Always 0 (Success);
  */
 
 int main(void)
-
 {
-	char letter;
+       	 char c;
 
-	for
-	       	(letter = 'a'; letter <= 'z' letter++);
+	 c = 'a';
 
-	{
-		putchar(letter);
-	}
-	putchar('\n');
-	return (0);
+	 while (c <= 'z')
+	 {
+		 putchar(c);
+		 c++;
+	 }
+	 putchar("\n",);
+
+	 return (0);
+
 }
