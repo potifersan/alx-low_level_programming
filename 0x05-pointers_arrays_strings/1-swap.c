@@ -1,18 +1,14 @@
-nclude "main.h"
+#include "main.h"
 
-/*
- * swap_int-Swaps the values of 2 integers.
- * @a:First argument to be swapped.
- * @b:second argument to be swapped.
- *
- * Return: void.
+/**
+ * swap_int - To swap the value of a and b from 98, 42.
+ * @a: The value of 'a' will be swaped to 42 while.
+ * @b: The value of 'b' will be swaped to 98.
  */
 
-void swap_int(int *a, int *b);
-
+void swap_int(int *a, int *b)
 {
-	int p = *a;
-	*a = *b;
-	*b = p;
-
+	*a = *a + *b;
+	*b = *a - *b;
+	*a = *a - *b;
 }
