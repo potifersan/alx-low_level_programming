@@ -1,19 +1,22 @@
-nclude "main.h"
-#include <stdio.h>
+#include "main.h"
 
 /**
- * _puts - To print the value of *str from main
- * @str: string pointer.
- * Printing with putchar
+ * _puts - prints a string, followed by a new line.
+ * @str: input string.
+ * Return: no return.
  */
-
 void _puts(char *str)
 {
-	int c;
+	int count = 0;
 
-	for (c = 0; str[c] != '\0'; c++)
+	while (count >= 0)
 	{
-		putchar(str[c]);
+		if (str[count] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		_putchar(str[count]);
+		count++;
 	}
-	putchar ('\n');
 }
