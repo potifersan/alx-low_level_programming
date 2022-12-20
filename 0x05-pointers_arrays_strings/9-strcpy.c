@@ -1,4 +1,4 @@
-nclude "main.h"
+#include "main.h"
 
 /**
  * _strcpy - copies the string pointed to by src
@@ -10,7 +10,7 @@ nclude "main.h"
 char *_strcpy(char *dest, char *src)
 {
 	int m;
-l
+
 	for (m = 0; src[m] != '\0'; m++)
 	{
 		dest[m] = src[m];
