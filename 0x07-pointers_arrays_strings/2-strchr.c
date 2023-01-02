@@ -19,6 +19,7 @@ char *_strchr(char *s, char c)
 		{
 			isFound = s;
 			break;
+		}
 			++s;
 		}
 		if (*s == c)
